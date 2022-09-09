@@ -13,6 +13,12 @@
 		B935155928CB063600DF8E1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B935155728CB063600DF8E1B /* Main.storyboard */; };
 		B935155B28CB063800DF8E1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B935155A28CB063800DF8E1B /* Assets.xcassets */; };
 		B935155E28CB063800DF8E1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B935155C28CB063800DF8E1B /* LaunchScreen.storyboard */; };
+		B935156628CB06FF00DF8E1B /* BeerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B935156528CB06FF00DF8E1B /* BeerListViewController.swift */; };
+		B935156928CB081900DF8E1B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B935156828CB081900DF8E1B /* SnapKit */; };
+		B935156C28CB084300DF8E1B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B935156B28CB084300DF8E1B /* Kingfisher */; };
+		B935156E28CB089300DF8E1B /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B935156D28CB089300DF8E1B /* Beer.swift */; };
+		B935157028CB0BFF00DF8E1B /* BeerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B935156F28CB0BFF00DF8E1B /* BeerListCell.swift */; };
+		B935157228CB128600DF8E1B /* BeerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B935157128CB128600DF8E1B /* BeerDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,10 @@
 		B935155A28CB063800DF8E1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B935155D28CB063800DF8E1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B935155F28CB063800DF8E1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B935156528CB06FF00DF8E1B /* BeerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewController.swift; sourceTree = "<group>"; };
+		B935156D28CB089300DF8E1B /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		B935156F28CB0BFF00DF8E1B /* BeerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListCell.swift; sourceTree = "<group>"; };
+		B935157128CB128600DF8E1B /* BeerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B935156C28CB084300DF8E1B /* Kingfisher in Frameworks */,
+				B935156928CB081900DF8E1B /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +75,10 @@
 				B935155A28CB063800DF8E1B /* Assets.xcassets */,
 				B935155C28CB063800DF8E1B /* LaunchScreen.storyboard */,
 				B935155F28CB063800DF8E1B /* Info.plist */,
+				B935156528CB06FF00DF8E1B /* BeerListViewController.swift */,
+				B935156D28CB089300DF8E1B /* Beer.swift */,
+				B935156F28CB0BFF00DF8E1B /* BeerListCell.swift */,
+				B935157128CB128600DF8E1B /* BeerDetailViewController.swift */,
 			);
 			path = Brewery;
 			sourceTree = "<group>";
@@ -83,6 +99,10 @@
 			dependencies = (
 			);
 			name = Brewery;
+			packageProductDependencies = (
+				B935156828CB081900DF8E1B /* SnapKit */,
+				B935156B28CB084300DF8E1B /* Kingfisher */,
+			);
 			productName = Brewery;
 			productReference = B935154E28CB063600DF8E1B /* Brewery.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +131,10 @@
 				Base,
 			);
 			mainGroup = B935154528CB063600DF8E1B;
+			packageReferences = (
+				B935156728CB081900DF8E1B /* XCRemoteSwiftPackageReference "SnapKit" */,
+				B935156A28CB084300DF8E1B /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = B935154F28CB063600DF8E1B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +162,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B935157228CB128600DF8E1B /* BeerDetailViewController.swift in Sources */,
+				B935156628CB06FF00DF8E1B /* BeerListViewController.swift in Sources */,
 				B935155628CB063600DF8E1B /* ViewController.swift in Sources */,
+				B935156E28CB089300DF8E1B /* Beer.swift in Sources */,
 				B935155228CB063600DF8E1B /* AppDelegate.swift in Sources */,
 				B935155428CB063600DF8E1B /* SceneDelegate.swift in Sources */,
+				B935157028CB0BFF00DF8E1B /* BeerListCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +386,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B935156728CB081900DF8E1B /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		B935156A28CB084300DF8E1B /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B935156828CB081900DF8E1B /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B935156728CB081900DF8E1B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		B935156B28CB084300DF8E1B /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B935156A28CB084300DF8E1B /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B935154628CB063600DF8E1B /* Project object */;
 }

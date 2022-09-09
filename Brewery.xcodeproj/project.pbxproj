@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		B935155228CB063600DF8E1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B935155128CB063600DF8E1B /* AppDelegate.swift */; };
 		B935155428CB063600DF8E1B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B935155328CB063600DF8E1B /* SceneDelegate.swift */; };
-		B935155628CB063600DF8E1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B935155528CB063600DF8E1B /* ViewController.swift */; };
-		B935155928CB063600DF8E1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B935155728CB063600DF8E1B /* Main.storyboard */; };
 		B935155B28CB063800DF8E1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B935155A28CB063800DF8E1B /* Assets.xcassets */; };
 		B935155E28CB063800DF8E1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B935155C28CB063800DF8E1B /* LaunchScreen.storyboard */; };
 		B935156628CB06FF00DF8E1B /* BeerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B935156528CB06FF00DF8E1B /* BeerListViewController.swift */; };
@@ -25,8 +23,6 @@
 		B935154E28CB063600DF8E1B /* Brewery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brewery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B935155128CB063600DF8E1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B935155328CB063600DF8E1B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B935155528CB063600DF8E1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B935155828CB063600DF8E1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B935155A28CB063800DF8E1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B935155D28CB063800DF8E1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B935155F28CB063800DF8E1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -70,8 +66,6 @@
 			children = (
 				B935155128CB063600DF8E1B /* AppDelegate.swift */,
 				B935155328CB063600DF8E1B /* SceneDelegate.swift */,
-				B935155528CB063600DF8E1B /* ViewController.swift */,
-				B935155728CB063600DF8E1B /* Main.storyboard */,
 				B935155A28CB063800DF8E1B /* Assets.xcassets */,
 				B935155C28CB063800DF8E1B /* LaunchScreen.storyboard */,
 				B935155F28CB063800DF8E1B /* Info.plist */,
@@ -151,7 +145,6 @@
 			files = (
 				B935155E28CB063800DF8E1B /* LaunchScreen.storyboard in Resources */,
 				B935155B28CB063800DF8E1B /* Assets.xcassets in Resources */,
-				B935155928CB063600DF8E1B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,7 +157,6 @@
 			files = (
 				B935157228CB128600DF8E1B /* BeerDetailViewController.swift in Sources */,
 				B935156628CB06FF00DF8E1B /* BeerListViewController.swift in Sources */,
-				B935155628CB063600DF8E1B /* ViewController.swift in Sources */,
 				B935156E28CB089300DF8E1B /* Beer.swift in Sources */,
 				B935155228CB063600DF8E1B /* AppDelegate.swift in Sources */,
 				B935155428CB063600DF8E1B /* SceneDelegate.swift in Sources */,
@@ -175,14 +167,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B935155728CB063600DF8E1B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B935155828CB063600DF8E1B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B935155C28CB063800DF8E1B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -320,7 +304,6 @@
 				INFOPLIST_FILE = Brewery/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -348,7 +331,6 @@
 				INFOPLIST_FILE = Brewery/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

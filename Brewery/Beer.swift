@@ -4,7 +4,7 @@ import Foundation
 struct Beer: Decodable{
     let id: Int?
     let name, taglineString, description, brewersTips, imageURL: String?
-    let foodParing: [String]?
+    let foodPairing: [String]?
     
     ///받아온 정보를 해쉬태그형태로 구성해준다.
     /// tag. hi. bye --> #tag #hi #bye
@@ -25,6 +25,6 @@ struct Beer: Decodable{
         case taglineString = "tagline"
         case imageURL = "image_url"
         case brewersTips = "brewers_tips"
-        case foodParing = "food_paring"
+        case foodPairing = "food_pairing"
     }
 }

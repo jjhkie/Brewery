@@ -13,7 +13,7 @@ class BeerListViewController: UITableViewController {
         
         //UINavigationBar
         title = "Brewery"
-        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.prefersLargeTitles = true // 제목을 큰 형식으로 표시할 지 나타내는 bool 값.
         
         //UITableView 설정
         tableView.register(BeerListCell.self, forCellReuseIdentifier: "BeerListCell")
@@ -25,8 +25,9 @@ class BeerListViewController: UITableViewController {
     }
 }
 
-//UITableView DataSource, Delegate
+
 extension BeerListViewController{
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return beerList.count
     }
@@ -48,6 +49,7 @@ extension BeerListViewController{
         self.show(detailViewController, sender: nil)
     }
 }
+
 //UITableViewPrefetching
 extension BeerListViewController: UITableViewDataSourcePrefetching{
     func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
